@@ -20,9 +20,9 @@ Permite analizar código en un subconjunto de C y detectar errores semánticos c
 1. Generar lexer y parser:
    - bison -d parser.y
    - flex lexer.l
-   - gcc lex.yy.c y.tab.c -o hands-on-6.exe
+   - gcc lex.yy.c parser.tab.c -o hands-on-6.exe
 2. Ejecutar el compilador sobre un archivo de prueba:
-   - Get-Content input.c | .\compilador.exe  (PowerShell)
-   - type input.c | compilador.exe  (CMD)
+   - Get-Content input.c | .\hands-on-6.exe  (PowerShell)
+   - type input.c | hands-on-6.exe  (CMD)
 3. Ver la salida: declaraciones, asignaciones y errores semánticos.
 
